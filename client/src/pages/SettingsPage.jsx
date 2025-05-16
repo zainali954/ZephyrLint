@@ -7,7 +7,7 @@ import { getDeviceInfo } from "../utils/parseUserAgent";
 import { Link } from "react-router-dom";
 import ProfileCard from "../components/ProfileCard";
 import SessionButtons from "../components/SessionButtons";
-import ApiKeyManager from "../components/ApiKeyManager";
+import ApiKeyManager from "../components/APIKeyManager.jsx";
 import ApiKeyModal from "../components/ApiKeyModal";
 
 const Settings = () => {

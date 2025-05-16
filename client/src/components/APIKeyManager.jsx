@@ -1,19 +1,13 @@
-import axios from "axios";
+
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { toast } from "react-toastify";
-import API from "../services/api";
-import { setApiKey, removeApiKey } from "../redux/Slices/authSlice"; // Example actions
+import { setApiKey } from "../redux/Slices/authSlice"; // Example actions
 import { showConfirmModal } from "../redux/Slices/confirmModalSlice";
 
 const ApiKeyManager = () => {
     const dispatch = useDispatch();
     const { user } = useSelector((state) => state.auth);
-
     const [key, setKey] = useState("");
-
-
-
     const addKey = async () => {
         if (!key.trim()) return;
         dispatch(setApiKey(key))
