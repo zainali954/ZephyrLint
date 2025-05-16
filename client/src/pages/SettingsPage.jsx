@@ -7,8 +7,8 @@ import { getDeviceInfo } from "../utils/parseUserAgent";
 import { Link } from "react-router-dom";
 import ProfileCard from "../components/ProfileCard";
 import SessionButtons from "../components/SessionButtons";
-import ApiKeyManager from "../components/APIKeyManager.jsx";
 import ApiKeyModal from "../components/ApiKeyModal";
+import ApiKeyManager from "../components/APIKeyManager.jsx"
 
 const Settings = () => {
     const { user, sessions, accessToken, sessionId } = useSelector((state) => state.auth);
