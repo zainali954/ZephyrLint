@@ -1,0 +1,21 @@
+// utils/languageExtensions.js
+export const languageExtensions = {
+  'javascript': "js",
+  typescript: "ts",
+  python: "py",
+  php: "php",
+  jsx: "jsx",
+  tsx: "tsx",
+  html: "html",
+  css: "css",
+  json: "json",
+  sql: "sql",
+  bash: "sh",
+  go: "go",
+  c: "c",
+  cpp: "cpp",
+  csharp: "cs",
+  java: "java",
+  yaml: "yaml",
+  markdown: "md",
+};

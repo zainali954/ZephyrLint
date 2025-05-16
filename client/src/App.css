@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+
+/* Editor & Code Blocks */
+.container__editor textarea,
+pre,
+code {
+    outline: none;
+}
+
+
+
+
+/* Markdown and output area */
+/* h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #f8fafc;
+} */
+
+/* p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: #cfcfcf;
+  font-family: 'Fira Code', monospace;
+  font-size: 15px;
+}
+p .dark{
+    color: #25c3eb;
+} */
+
+/* p strong {
+  font-weight: 600;
+  color: #ffffff;
+  font-family: inherit;
+} */
+
+/* List items */
+/* li {
+  margin-bottom: 16px;
+  padding-left: 1.25rem;
+  position: relative;
+  font-family: 'Fira Code', monospace;
+  color: #cfcfcf;
+  font-size: 14px;
+  line-height: 1.5;
+} */
+
+/* li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #6ef838; 
+  font-size: 1rem;
+} */
+
+/* li strong {
+  color: #f1f1f1; 
+  font-weight: 600;
+  font-size: 14px;
+} */
+
+
+ code {
+    color: black;
+    background-color: #ebebeb;
+    padding: 0.15em 0.4em;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.dark code {
+  background-color:rgb(104, 104, 104);
+  color: white;
+}
+
+
+/* Pre blocks */
+pre {
+    border: 1px solid #272a2e;
+    /* slate-700 */
+    border-radius: 6px;
+    padding: 1rem;
+    overflow-x: auto;
+    background-color: #161616;
+    /* slate-900 */
+}
+
+/* Selection highlight */
+::selection {
+    background: #615fff;
+    /* blue-600 */
+    color: #fff;
+}
+
+.hljs {
+    color: #c9d1d9;
+    background: initial !important;
+}
+
+.resizableMobile {
+  display: block;
+  overflow: auto;
+}
+
+.resizableDesktop {
+  display: flex;
+  overflow: hidden;
+}
