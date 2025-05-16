@@ -20,15 +20,6 @@ import aiRouter from './routes/ai.routes.js'
 app.use('/api/auth', authRouter)
 app.use('/api/user', userRouter)
 app.use('/api/ai', aiRouter)
-
-
-app.get('/', async(req, res)=>{
-    const userAgent = req.headers["user-agent"] || "Unknown";
-    const ipAddress = req.ip || req.connection.remoteAddress;
-    
-    res.status(200).json({success: true, message:"good to go", userAgent, ipAddress})
-})
-
 app.use((err, req, res, next)=>{
     console.error("Error: ", err)
     const statusCode = err.statusCode || 500;
